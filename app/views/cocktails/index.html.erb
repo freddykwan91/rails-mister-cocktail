@@ -8,16 +8,17 @@
   <div class="row">
     <% @cocktails.each do |cocktail| %>
     <div class="col-xs-12 col-sm-4">
-      <div class="card">
+      <div class="card"
+        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+         url('<%= image_path(cocktail.photo) %>')">
         <%= link_to cocktail.name, cocktail_path(cocktail), class:"card-description" %><br>
-        <%= link_to "Delete", cocktail_path(cocktail), method:"delete", class:"card-delete" %>
       </div>
     </div>
     <% end %>
   </div>
   <div class="row">
     <div class="text-center padded">
-      <%= link_to "Custom", new_cocktail_path, class: "btn btn-primary" %>
+      <%= link_to "Create Your Own", new_cocktail_path, class: "btn btn-primary" %>
     </div>
   </div>
 </div>
