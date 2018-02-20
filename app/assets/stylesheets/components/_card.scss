@@ -1,0 +1,22 @@
+.card {
+  height: 175px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  background-color: #E93645;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px #80808040;
+  position: relative;
+  margin: 20px;
+  opacity: 1;
+}
+.card:hover {
+  opacity: 0.5;
+}
+.card-description {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
